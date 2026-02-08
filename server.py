@@ -42,7 +42,7 @@ async def dividenumbers(a: float, b: float) -> str:
 
 @tool(description="Health check")
 async def healthcheck() -> str:
-    """Check API health status."""
+    """Health check."""
     return await _request("GET", "/health")
 
 @tool(description="Multiply two numbers [WRITES DATA]")
